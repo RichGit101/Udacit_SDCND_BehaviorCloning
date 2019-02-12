@@ -211,9 +211,9 @@ _________________________________________________________________
 ### * Model training
 Model training was treated as an iterative process. Multiple models were tested for this project across multiple platforms and cloud. It can be seen from the WIP.experiments ipython notebook, that first model to make it to track with converged result was a RelU based activation with NVIDIA model but it failed. Hence an ELU based model was employed. It captured the negative side gradients hence the suspension of missing information in activation function was proven to be right. Various augmentation techniques were tried, model was trained and tested on a mini batch first for convergence. Later it was moved to simulation.
 Failure of ReLu can be seen below
-![reluVsElu1](/resouces/failed2.png)
+![reluVsElu1](/resources/failed2.png)
 Analysis of matrices my printing our weight and bias values in activation nodes will point to issue with activation function in capturing additional information.
-![reluVsElu2](/resouces/relu_elu.png)
+![reluVsElu2](/resources/relu_elu.png)
 
 so we can see a better though not too bad performance with Elu
 
