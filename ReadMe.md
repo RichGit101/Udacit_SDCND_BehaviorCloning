@@ -58,11 +58,11 @@ This is NVIDIA model. Please refer to End to End driving paper. The loop system 
 ### Rubrics Check
 
 * 1 Required Files
-          - model.py file -Yes
-          - drive.py -Yes
-          - model.h5 -Yes
-          - writeup report -Yes
-          - video.mp4 -Yes
+          - model.py file -Yes (selected_model_BC1.ipynb and selected_model_BC1.ipynb)
+          - drive.py -Yes (my_drive.py)
+          - model.h5 -Yes (selected_model.h5)
+          - writeup report -Yes (ReadMe.md)
+          - video.mp4 -Yes (PrepedMovieDCFinalV1.mp4)
           same in [Youtube]: https://youtu.be/ukB8AsF6UvY
   Final result - https://youtu.be/ukB8AsF6UvY
 
