@@ -49,7 +49,7 @@
  This project is built for Udacity 2019 Self driving car Nano degree Behavioural cloning task.
  Simulator was built on Unity and it is provided by Udacity.
 This is NVIDIA model. Please refer to End to End driving paper. The loop system we are attemting to acheive finally is represented in this image.
-![Nvidia_loop](/resource/NVIDIA_loop.png)
+![Nvidia_loop](/resources/NVIDIA_loop.png)
 
 
  To execute this project, we have built it in two files. One is the python notebook which you will find along with this file in the directory. It lists conda environment module lists. You have to use conda to install the prerequisites. Second part is the simulator connector bridge which uses Flask web server to establish connection to udacity unity based simulator. This second part requires a second environment. Care must be taken as i started with a windows 10 pro on pip and tensorflow gpu, attempting to install flask+eventlet+ socket io with Pip (released pip ver 12 and above) consistently destroyed and  broke python and pip environments along with tensorflow gpu. I had to switch back to mac cpu with a conda environment.
@@ -64,6 +64,7 @@ This is NVIDIA model. Please refer to End to End driving paper. The loop system 
           - writeup report -Yes
           - video.mp4 -Yes
           same in [Youtube]: https://youtu.be/ukB8AsF6UvY
+  Final result - https://youtu.be/ukB8AsF6UvY
 
 * 2 Quality of Code
 
@@ -166,7 +167,7 @@ Here is a  failed trainig when we used incompatible model.
 
 ### * Model building
 Final model is as shown
-![model_summary](/resource/model_summary_numbers.png)
+![model_summary](/resources/model_summary_numbers.png)
 
 Model was built multiple times. First experiments to build a model based on previous lessons regression based tasks did not help. Hence had to refer to NVIDIA tested and proven model.
 Final architecture is summarised  
@@ -216,11 +217,11 @@ Analysis of matrices my printing our weight and bias values in activation nodes 
 
 so we can see a better though not too bad performance with Elu
 
-![EluPerf](resource/failed3.png)
+![EluPerf](resources/failed3.png)
 
 Finally the set of augmentation and preprocessing techniques selected from our WIP/experiments ipyhon notebook to final selected model ipyhon notebook provided better convergence and better results in simulation.
 We can see results as
-![betterResults](/resource/failed4.png)
+![betterResults](/resources/failed4.png)
 Adam optimiser was was with mean squared loss function which suits our continuous regression problem of arriving at continuous steering angles.
 
 A batch generator was finally built using yield keyword. Its purpose is to provide that real time effect by providing on the fly batches of training .
@@ -233,7 +234,7 @@ As it can be noted. Multiple graphs have been plotted. Every time a model is sel
 After initial testing with ReLu and ELU (refer to graphs in WIP/experiments ipyhon notebook file) we went for augmentation and building the model back. It can be noted that result converged after we selected and narrowed down steps per epoch to 300 in training and 200 in validation. This change greatly helped in converging.
 Final convergence can be seen
 
-![FinalGraph1](/resource/Loss_Epoch_final.png)
+![FinalGraph1](/resources/Loss_Epoch_final.png)
 
 
 ### * Simulation testing
@@ -258,6 +259,9 @@ Please check out this one of the many video simulation recordings.
   <source src="PrepedMovieBCFinalV1.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+If uplink on git is an issue, please check youtube https://youtu.be/ukB8AsF6UvY
+Youtube(https://youtu.be/ukB8AsF6UvY)
 
 ### * Finalisation and metrics
 
