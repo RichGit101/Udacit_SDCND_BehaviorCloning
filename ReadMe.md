@@ -112,7 +112,7 @@ Process of behavioural cloning is an iterative process, it includes visiting bac
 We required to employ a method to avoid non-generalised approach, to avoid too much bias to center line driving, to drive in one direction, recovery conditions and laps.
  It also includes iterative forms of argumentation and data preprocessing  techniques for the images.
 We also required an iterative approach to metadata processing ie for steering angles and throttle. Few attempts have been made to optimise hyper parameter.
-
+![FinalGraph2](/resources/40epochs.png)
 
 ### * Data collection
 Drove udacity driving simulator in manual mode in track one. Care was taken at first to keep the car in centre line. It was much easier to use an Xbox one controller in windows platform. In mac xbox controller maps have failed.
@@ -239,7 +239,7 @@ Final convergence can be seen
 ![FinalGraph1](/resources/Loss_Epoch_final.png)
 
 Full 40 Epoch testing convergence can be seen
-(/resources/40epochs.png)
+![FinalGraph2](/resources/40epochs.png)
 
 ### * Simulation testing
 We were provided with a drive.py file.
@@ -261,7 +261,7 @@ Model is fine tuned by adjusting hyper parameters. This can be seen in the first
 Please check out this one of the many video simulation recordings.
 
 Full 40 Epoch testing convergence can be seen
-(/resources/40epochs.png)
+![FinalGraph2](/resources/40epochs.png)
 
 
 If uplink on git is an issue, please check youtube https://www.youtube.com/watch?v=kLvC_4G6uJQ
