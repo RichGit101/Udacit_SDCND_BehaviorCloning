@@ -171,7 +171,10 @@ Here is a  failed trainig when we used incompatible model.
 
 ### * Model building
 Final model is as shown
-![model_summary](/resources/model_summary_numbers.png)
+![model_summary1](/resources/ModelArch.png)
+
+However there were many model alterations which were tried, this is one shown below. It failed first review. Hence the second model above this line was built 
+![model_summaryf](/resources/model_summary_numbers.png)
 
 Model was built multiple times. First experiments to build a model based on previous lessons regression based tasks did not help. Hence had to refer to NVIDIA tested and proven model.
 
