@@ -61,7 +61,7 @@ This is NVIDIA model. Please refer to End to End driving paper. The loop system 
 ![Nvidia_loop](/resources/NVIDIA_loop.png)
 
 
- To execute this project, we have built it in two files. One is the python notebook which you will find along with this file in the directory. It lists conda environment module lists. You have to use conda to install the prerequisites. Second part is the simulator connector bridge which uses Flask web server to establish connection to udacity unity based simulator. This second part requires a second environment. Care must be taken as i started with a windows 10 pro on pip and tensorflow gpu, attempting to install flask+eventlet+ socket io with Pip (released pip ver 12 and above) consistently destroyed and  broke python and pip environments along with tensorflow gpu. I had to switch back to mac cpu with a conda environment.
+ To execute this project, I have built it in two files. One is the python notebook which you will find along with this file in the directory. It lists conda environment module lists. You have to use conda to install the prerequisites. Second part is the simulator connector bridge which uses Flask web server to establish connection to udacity unity based simulator. This second part requires a second environment. Care must be taken as i started with a windows 10 pro on pip and tensorflow gpu, attempting to install flask+eventlet+ socket io with Pip (released pip ver 12 and above) consistently destroyed and  broke python and pip environments along with tensorflow gpu. I had to switch back to mac cpu with a conda environment.
  On the base, for simulation Unity must be installed and registered on Unity site.
 
 ### Rubrics Check
