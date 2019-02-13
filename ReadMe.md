@@ -284,7 +284,7 @@ Result - averaged 28-29 m/hr
 At 10.5 miles capped 
 Youtube https://youtu.be/mp0iopcqJEk
 
-[![Behaviour Cloning FS](/resources/10mileslimited.png)](https://www.youtube.com/watch?v=mp0iopcqJEk "Behaviour Cloning at 10 miles speed limited on Track 1")
+[![Behaviour Cloning FS](/resources/20mileslimited.png)](https://www.youtube.com/watch?v=mp0iopcqJEk "Behaviour Cloning at 10 miles speed limited on Track 1")
 
 
 ### * Finalisation and metrics
