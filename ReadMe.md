@@ -238,6 +238,8 @@ Final convergence can be seen
 
 ![FinalGraph1](/resources/Loss_Epoch_final.png)
 
+Full 40 Epoch testing convergence can be seen
+(/resources/40epochs.png)
 
 ### * Simulation testing
 We were provided with a drive.py file.
@@ -259,7 +261,7 @@ Model is fine tuned by adjusting hyper parameters. This can be seen in the first
 Please check out this one of the many video simulation recordings.
 
 Full 40 Epoch testing convergence can be seen
-(/resource/40epochs.png)
+(/resources/40epochs.png)
 
 
 If uplink on git is an issue, please check youtube https://www.youtube.com/watch?v=kLvC_4G6uJQ
