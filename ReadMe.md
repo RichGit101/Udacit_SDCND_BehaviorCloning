@@ -3,7 +3,8 @@
 ### Final Testing Result
 
 
-## * Track 1 - completed 5 lap endurance LeMans Style test at an average of 28-29 miles per hour.
+###### _Track 1 - completed 5 lap endurance LeMans Style test at an average of 28-29 miles per hour._
+    * _This is difficult even to attempt by hand on a key board. Hence Nvidia model Udacity BC techniques proved itself_
 
 Watch YouTube Video at https://www.youtube.com/watch?v=kLvC_4G6uJQ
 
