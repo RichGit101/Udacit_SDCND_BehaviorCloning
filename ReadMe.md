@@ -2,6 +2,9 @@
 
 ### Final Testing Result
 
+
+## * Track 1 - completed 5 lap endurance LeMans Style test at an average of 28-29 miles per hour.
+
 Watch YouTube Video at https://www.youtube.com/watch?v=kLvC_4G6uJQ
 
 [![Behaviour Cloning FS](/resources/fullspeed.png)](https://www.youtube.com/watch?v=kLvC_4G6uJQ "Behaviour Cloning at Full Speed")
