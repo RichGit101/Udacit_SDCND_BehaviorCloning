@@ -1,6 +1,10 @@
 #  Behavioural Cloning for Self driving car simulation
 
-![]
+### Final Testing Result
+
+Watch YouTube Video at https://www.youtube.com/watch?v=kLvC_4G6uJQ
+
+[![Behaviour Cloning FS](/resources/fullspeed.png)](https://www.youtube.com/watch?v=kLvC_4G6uJQ "Behaviour Cloning at Full Speed")
 
 
 #### Brief
@@ -58,12 +62,12 @@ This is NVIDIA model. Please refer to End to End driving paper. The loop system 
 ### Rubrics Check
 
 * 1 Required Files
-          - model.py file -Yes (selected_model_BC1.ipynb and selected_model_BC1.ipynb)
-          - drive.py -Yes (my_drive.py)
-          - model.h5 -Yes (selected_model.h5)
+          - model.py file -Yes 
+          - drive.py -Yes 
+          - model.h5 -Yes 
           - writeup report -Yes (ReadMe.md)
-          - video.mp4 -Yes (PrepedMovieDCFinalV1.mp4)
-          same in [Youtube]: https://youtu.be/ukB8AsF6UvY
+          - video.mp4 -Yes Corrected after review 1 for review 2
+         
   Final result - https://youtu.be/ukB8AsF6UvY
 
 * 2 Quality of Code
@@ -170,12 +174,12 @@ Final model is as shown
 ![model_summary](/resources/model_summary_numbers.png)
 
 Model was built multiple times. First experiments to build a model based on previous lessons regression based tasks did not help. Hence had to refer to NVIDIA tested and proven model.
-Final architecture is summarised  
-_________________________________________________________________
-Layer (type)               Output Shape               Units    
-_________________________________________________________________
-_________________________________________________________________
 
+
+### Final architecture is summarised  
+
+Layer (type)                 Output Shape              Param #   
+=================================================================
 conv2d_1 (Conv2D)            (None, 31, 98, 24)        1824      
 _________________________________________________________________
 conv2d_2 (Conv2D)            (None, 14, 47, 36)        21636     
@@ -190,22 +194,20 @@ flatten_1 (Flatten)          (None, 1152)              0
 _________________________________________________________________
 dense_1 (Dense)              (None, 100)               115300    
 _________________________________________________________________
+dropout_1 (Dropout)          (None, 100)               0         
+_________________________________________________________________
 dense_2 (Dense)              (None, 50)                5050      
 _________________________________________________________________
 dense_3 (Dense)              (None, 10)                510       
 _________________________________________________________________
-dense_4 (Dense)              (None, 1)                 11        
+dropout_2 (Dropout)          (None, 10)                0         
 _________________________________________________________________
-
-
-###### * Overview
+dense_4 (Dense)              (None, 1)                 11        
+=================================================================
 
 Total params: 252,219
-_________________________________________________________________
 Trainable params: 252,219
-_________________________________________________________________
 Non-trainable params: 0
-_________________________________________________________________
 
 
 ### * Model training
@@ -251,17 +253,37 @@ Port : 4567
 Multiple models were generated. First with ReLU and it did not train as expected. Second model was with Elu. It definitely helped to pass the first turn corner in the track. Hence from the WIP/ experiments python notebook notes it can be see that capturing that negative gradient beyond zero in activation of neurones helped us to arrive at a better model. Hence drive angle information in regression depended on the extended information which ELU covers.
 After ELU we generated multiple models with various argumentation techniques. We combined and mixed and matched them. Experiments can be seen in WIP/experiments ipython notebook. Final selection can be seen in the Final ipython notebook.
 
-### * Model tuning
+### * Model tuning and Testing Results
 
 Model is fine tuned by adjusting hyper parameters. This can be seen in the first ipython WIP and experiments notebook. It is an iterative process of adjusting hyper parameters switching from mix and match and best previous references. In our case changing learning rate from e-3 to e-4 made a big difference to result.Quite often graphical verification with smaller number of iteration gives the first over view before going for a larger number of iterations for epochs.
 Please check out this one of the many video simulation recordings.
-<video width="320" height="240" controls>
-  <source src="PrepedMovieBCFinalV1.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
-If uplink on git is an issue, please check youtube https://youtu.be/ukB8AsF6UvY
-Youtube(https://youtu.be/ukB8AsF6UvY)
+Full 40 Epoch testing convergence can be seen
+(/resource/40epochs.png)
+
+
+If uplink on git is an issue, please check youtube https://www.youtube.com/watch?v=kLvC_4G6uJQ
+
+Many Tests were conducted. Model dropout was added after first review. 40 Epoch was iterated.
+
+
+Two Videos are available.
+
+### Full Speed Test - Endurance for Homologation - *Selected
+
+At Full speed 30 m/hr track 1 test - https://www.youtube.com/watch?v=kLvC_4G6uJQ
+Result - averaged 28-29 m/hr
+
+[![Behaviour Cloning FS](/resources/fullspeed.png)](https://www.youtube.com/watch?v=kLvC_4G6uJQ "Behaviour Cloning at Full Speed")
+
+
+
+#### 15 Miles Speed Capped Level one UAT test
+At 10.5 miles capped 
+Youtube https://youtu.be/mp0iopcqJEk
+
+[![Behaviour Cloning FS](/resources/10mileslimited.png)](https://www.youtube.com/watch?v=mp0iopcqJEk "Behaviour Cloning at 10 miles speed limited on Track 1")
+
 
 ### * Finalisation and metrics
 
